@@ -1,0 +1,12 @@
+<h3 style="text-align: center">Vista Carrito de compras</h3>
+
+<div ng-repeat="arti in carrito">
+    
+			Cantidad: {{arti.canti}} Nombre: {{arti.Nombre}} Costo: {{arti.precio}} Importe: {{arti.importe}}
+			<button ng-click="delete(arti, $index)">delete</button>	 
+			
+          
+	
+</div>
+<br><br>
+  <a href="#/lista"><button type="button"  class="btn btn-primary">Regresar a lista de productos</button></a>
